@@ -1,0 +1,6 @@
+LEEME_NETBEANS.txt
+*.class
+*.jar
+*.war
+build/
+dist/
