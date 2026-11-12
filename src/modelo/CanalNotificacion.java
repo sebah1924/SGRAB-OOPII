@@ -1,12 +1,10 @@
-package modelo; // Paquete del dominio.
+package modelo;
+                                   // Paquete único del modelo
 
-/**
- * Canales oficiales por los que la EAAB notifica a los usuarios durante la crisis (Necesidad 3).
- * Cada usuario tiene un canal preferido.
- */
-public enum CanalNotificacion {  // Declaración de la enumeración CanalNotificacion: Canales oficiales por los que la EAAB notifica a los usuarios durante la crisis (Necesidad 3)
-    EMAIL,    // Correo electrónico.
-    SMS,      // Mensaje de texto.
-    PUSH,     // Notificación push a la aplicación móvil.
-    LLAMADA   // Llamada telefónica automatizada.
+/** Canales oficiales de notificación de la EAAB. */
+public enum CanalNotificacion {
+    EMAIL,     // Correo electrónico
+    SMS,       // Mensaje de texto
+    PUSH,      // Notificación push
+    LLAMADA    // Llamada telefónica
 }

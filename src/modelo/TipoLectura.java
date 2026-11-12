@@ -1,9 +1,8 @@
-package modelo; // Paquete del dominio.
+package modelo;
+                                   // Paquete único del modelo
 
-/**
- * Forma en que se obtuvo el volumen de un consumo.
- */
-public enum TipoLectura {  // Declaración de la enumeración TipoLectura: Forma en que se obtuvo el volumen de un consumo
-    REAL,      // Lectura tomada en sitio, directamente del medidor.
-    ESTIMADA   // Lectura calculada por promedio cuando no se pudo medir.
+/** Tipo de lectura del consumo de agua. */
+public enum TipoLectura {
+    REAL,      // Tomada en sitio por el operario
+    ESTIMADA   // Calculada por promedio
 }

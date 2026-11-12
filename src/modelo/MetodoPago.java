@@ -1,11 +1,10 @@
-package modelo; // Paquete del dominio.
+package modelo;
+                                   // Paquete único del modelo
 
-/**
- * Métodos con los que un usuario puede pagar una factura (Necesidad 8).
- */
-public enum MetodoPago {  // Declaración de la enumeración MetodoPago: Métodos con los que un usuario puede pagar una factura (Necesidad 8)
-    TARJETA,        // Tarjeta débito o crédito.
-    TRANSFERENCIA,  // Transferencia bancaria.
-    EFECTIVO,       // Pago en efectivo en un punto autorizado.
-    PSE             // Pagos Seguros en Línea (botón de pago de los bancos colombianos).
+/** Métodos de pago aceptados por la EAAB. */
+public enum MetodoPago {
+    TARJETA,        // Pago con tarjeta débito/crédito
+    TRANSFERENCIA,  // Transferencia bancaria
+    EFECTIVO,       // Pago en efectivo
+    PSE             // Pago en línea por PSE
 }

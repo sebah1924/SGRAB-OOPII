@@ -1,13 +1,10 @@
-package modelo; // Paquete del dominio.
+package modelo;
+                                   // Paquete único del modelo
 
-/**
- * Estados de pago de una factura.
- * Se actualizan automáticamente según los pagos recibidos y la fecha de vencimiento
- * (Necesidad 8 y 9 del enunciado).
- */
-public enum EstadoPago {  // Declaración de la enumeración EstadoPago: Estados de pago de una factura
-    PENDIENTE,        // Aún dentro del plazo y sin pagar completamente (ej.: factura recién emitida).
-    PAGADA,           // Los pagos registrados cubren el valor total (ej.: pagada antes del vencimiento).
-    VENCIDA,          // Pasó la fecha de vencimiento sin que los pagos cubran el total.
-    EN_ACUERDO_PAGO   // El usuario pactó con la EAAB pagar en cuotas.
+/** Enumeración con los estados posibles del pago de una factura. */
+public enum EstadoPago {
+    PENDIENTE,        // Aún dentro del plazo, no pagada
+    PAGADA,           // Los pagos cubren el total
+    VENCIDA,          // No pagada a tiempo (fecha de vencimiento superada)
+    EN_ACUERDO_PAGO   // El usuario pactó pagar en cuotas
 }
